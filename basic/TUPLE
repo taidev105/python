@@ -1,0 +1,55 @@
+TYPLE
+
+
+KHAI BAO
+(val1, val2,.., valn)
+nen
+day = ('monday', 'tuesday', 'wednesday' , 'thursday', 'friday', 'saturday' , 'sunday')
+khong nen
+day = 'monday', 'tuesday', 'wednesday' , 'thursday', 'friday', 'saturday' , 'sunday'
+khai báo 1 tuple trống
+a = ();
+chứa duy nhất một giá trị
+a = (10,)
+
+
+TRUY CAP DEN CAC PHAN TU
+tupleName[start:end]
+
+day = ('monday', 'tuesday', 'wednesday' , 'thursday', 'friday', 'saturday' , 'sunday')
+day[0] # monday
+
+day[-2] # saturday
+
+day = ('monday', 'tuesday', 'wednesday' , 'thursday', 'friday', 'saturday' , 'sunday')
+day[1:3] # ('tuesday', 'wednesday')
+
+day[:3] # ('monday', 'tuesday', 'wednesday')
+
+day[1:] # ('tuesday', 'wednesday' , 'thursday', 'friday', 'saturday' , 'sunday')
+
+XOA TYPE
+day = ('monday', 'tuesday', 'wednesday' , 'thursday', 'friday', 'saturday' , 'sunday')
+del day
+
+print(day) # Error: name 'day' is not defined
+
+THEM PHAN TU MOI
+day1 = ('monday', 'tuesday', 'wednesday')
+day2 = ('thursday', 'friday', 'saturday' , 'sunday')
+
+day = day1 + day2
+
+print(day)
+# ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')
+
+TYPLE LONG
+day1 = ('monday', 'tuesday', 'wednesday')
+day2 = ('thursday', 'friday', 'saturday' , 'sunday', day1)
+
+# day = day1 + day2
+
+print(day2)
+# ('thursday', 'friday', 'saturday', 'sunday', ('monday', 'tuesday', 'wednesday'))
+
+print(day2[4][0]) # monday
