@@ -1,0 +1,77 @@
+{key1: value1, key2: value2,..., keyN: valueN}
+
+VD:
+person = {
+    'name': 'Vũ Thanh Tài',
+    'age': 22,
+    'male': True,
+    'status': 'single'        
+    }
+
+Truy cập đến các phần tử trong dictionary
+dicName[key]
+VD:
+person = {
+    'name': 'Vũ Thanh Tài',
+    'age': 22,
+    'male': True,
+    'status': 'single'        
+    }
+person['name'] # Vũ Thanh Tài
+
+person['status'] # signle
+
+Thay đổi giá trị của dictionary
+person = {
+    'name': 'Vũ Thanh Tài',
+    'age': 22,
+    'male': True,
+    'status': 'alone'        
+    }
+
+person['status'] = 'married'
+print(person)
+#{'name': 'Vu Thanh Tài', 'age': 22, 'male': True, 'status': 'married'}
+
+Xóa phần tử trong diction.
+
+xóa một phần tử trong dictionary
+VD
+person = {
+    'name': 'Vũ Thanh Tài',
+    'age': 22,
+    'male': True,
+    'status': 'alone'        
+    }
+
+del person['status']
+print(person)
+#{'name': 'Vu Thanh Tài', 'age': 22, 'male': True}
+
+xóa tất cả các phần tử bên trong dictionary
+dictName.clear();
+VD:
+person = {
+    'name': 'Vũ Thanh Tài',
+    'age': 22,
+    'male': True,
+    'status': 'alone'        
+    }
+
+person.clear()
+print(person)
+#{}
+
+Dictionary lồng nhau.
+VD:
+person = {
+    'name': 'Vũ Thanh Tài',
+    'option': {
+                'age': 22,
+                'male': True,
+                'status': 'alone'
+            }        
+    }
+
+print(person['option']['age'])
+# 22
